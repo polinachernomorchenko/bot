@@ -7,9 +7,9 @@ import random
 import markovify
 from PIL import Image, ImageDraw, ImageFont
 from pymorphy2 import MorphAnalyzer
-import conf
 
-bot = telebot.TeleBot(conf.TOKEN)
+
+bot = telebot.TeleBot('1792988792:AAF5reUA92SkReBsMs7E2yGzarUAPFat-A4')
 m = MorphAnalyzer()
 voc = ['а', 'о', 'у', 'и', 'ы', 'е', 'э', 'ю', 'я']
 im_list = ['гора.jpg', 'фудзи.jpeg', 'animejpg.jpg', 'мост.jpg', 'город.jpg',
