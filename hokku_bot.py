@@ -15,11 +15,11 @@ voc = ['а', 'о', 'у', 'и', 'ы', 'е', 'э', 'ю', 'я']
 im_list = ['гора.jpg', 'фудзи.jpeg', 'animejpg.jpg', 'мост.jpg', 'город.jpg',
            'бамбук.jpg', 'гора2.jpg', 'вода.jpg', 'bamboo.jpeg']
 
-with open('mark_json.json', 'r', encoding='utf-8') as f:
+with open('home/ofawkes/bot/mark_json.json', 'r', encoding='utf-8') as f:
     model_json = json.load(f)
     mark = markovify.Text.from_json(model_json)
 
-with open('hokky_dict.json', 'r', encoding='utf-8') as f:
+with open('home/ofawkes/bot/hokky_dict.json', 'r', encoding='utf-8') as f:
     d = json.load(f)
 
 
@@ -146,7 +146,7 @@ def gen_hokku(h, voc, w):
 
 def gen_image(hokku, im_list):
     im_name = random.choice(im_list)
-    im = Image.open('pic/' + im_name)
+    im = Image.open('home/ofawkes/bot/pic/' + im_name)
     xi, yi = im.size
     x = round(xi/8)
     y = round(yi/5.3)
