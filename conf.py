@@ -1,0 +1,3 @@
+TOKEN = '1792988792:AAF5reUA92SkReBsMs7E2yGzarUAPFat-A4'
+WEBHOOK_HOST = 'ofawkes.pythonanywhere.com'
+WEBHOOK_PORT = '443'
